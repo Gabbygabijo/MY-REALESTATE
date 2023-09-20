@@ -1,0 +1,306 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto;
+}
+#footer{
+    background-color: #171b2a;
+    padding-top: 11rem;
+    margin-bottom: -30px;
+}
+#cta{
+    background-color: #ff5a3c;
+    margin: 0 5rem -6rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.cta-left{
+    margin: 40px;
+    color: #ffffff;
+}
+.cta-left > h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.cta-right{
+    display: flex;
+    margin: auto;
+}
+.cta-right > button{
+    font-size: 1.2rem;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 0;
+    transition: 0.4s;
+}
+.cta-right > button:hover{
+    box-shadow: inset 14.5em 0 0 0 #000000;
+    color: #ffffff;
+}
+
+
+.main-section{
+     margin-top: 40px;
+     margin-bottom: 40px;
+     margin-left: -40px;
+     background-size: cover;
+     background-position: center left;
+    background-image :url(../imgs/portfolio\ image.jpg); 
+    padding: 100px 100px;
+    width: 100%;
+    font-size: 27px;
+    
+}
+.main-section > h1{
+  margin-left: 70px;
+}
+.Extension{
+  font-size: 15px;
+  margin-left: 70px;
+
+}
+
+.Home-anchor{
+  text-decoration: none;
+  outline: none;
+  color: #000000;
+}
+.Home-anchor:hover{
+  color: #FF5A3C;
+}
+.port{
+  font-size: 15px;
+}
+
+
+
+
+.fluid-container{
+    margin: 20px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+}
+.col-6{
+    width: 22%;
+    margin: 10px 10px 10px 5px;
+}
+.col-2{
+    width: 19%;
+    margin: 10px 0px 10px 30px;
+}
+.col-2 > div > h3,
+.col-6 > div > h3{
+    font-size: 22px;
+}
+.col-6 > div > img{
+    margin-top: 13px;
+}
+.text > p{
+    line-height: 28px;
+}
+.lst > li{
+    list-style-type: none;
+    margin-left: -35px;
+    padding: 10px 0 10px 0;
+}
+.lst > li > a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.4s;
+}
+.lst > li > a:hover{
+    padding: 10px 0 10px 30px;
+    color: #ff5a3c;
+}
+.input{
+    display: flex;
+}
+.input > input{
+    background-color: #ffffff;
+    padding: 25px 20px;
+    border: none;
+    border-radius: none;
+    outline-width: 0;
+}
+.input > input:focus{
+    outline-width: 0.1rem;
+    outline-style: solid;
+    outline-color: #FF5A3C;
+}
+.input > input::placeholder{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.input > button{
+    background-color: #ff5a3c;
+    color: #ffffff;
+    border: none;
+    padding: 5px 15px;
+    border-radius: none;
+}
+.input > button:hover{
+    background-color: #000;
+}
+.accept > img{
+    width: 100%;
+    height: 35x;
+}
+
+/* Mobile screens css */
+@media (max-width:1070px) {
+    .fluid-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .col-2, .col-6{
+        width: 30%;
+        padding: 0 50px;
+    }
+    .col-2 > div > h3,
+    .col-6 > div > h3{
+        width: fit-content;
+    }
+    .main-nav > .nav-items{
+        display: none;
+      }
+}
+
+@media (max-width:700px) {
+    .fluid-container{
+        display: flex;
+        flex-direction: column;
+    }
+    #cta{
+        display: flex;
+        flex-direction: column;
+    }
+    .cta-left > h1{
+        font-size: 1.5rem;
+    }
+    .col-2, .col-6{
+        width: 50%;
+        padding: 0 50px;
+    }
+    .top-nav{
+        display: none;
+      }
+}
+@media (max-width:380px) {
+    .opt{
+        display: none;
+      }
+}
+
+/* header style */
+
+.main-nav {
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: 500;
+    padding: 20px 0;
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
+  }
+  .main-nav > .logo{
+    margin-top: 5px;
+  }
+  .main-nav > .nav-items{
+    margin-top: 20px;
+  }
+  .main-nav > .nav-items > a {
+    float:none;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .main-nav > .nav-items > a:hover {
+    background-color: #fff;
+    color: #FF5A3C;
+  }
+  
+  .opt > ul li {
+    list-style-type: none;
+    display: inline-block;
+  }
+  .opt > ul li a{
+    padding: 10px 15px;
+    margin: 0 4px;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    border-radius: none;
+    font-size: 20px;
+    transition: 0.3s;
+    border: none;
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+  .opt > ul li a:hover{
+    color: #fff;
+    background-color: #FF5A3C;
+  }
+
+  .top-nav{
+    background-color: #0b2c3d;
+  }
+  .top-nav > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 89%;
+    margin: auto;
+  }
+  .top-nav > div > .left{
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 7px;
+  }
+  .top-nav > div > .left > span:hover{
+    color: #FF5A3C;
+    cursor: pointer;
+  }
+  .top-nav > div > .left > span{
+    margin: 0 5px;
+    transition: 0.3s;
+  }
+  div > .left > span > svg{
+    color: #FF5A3C;
+    vertical-align: top;
+  }
+  div > .right{
+    display: flex;
+    flex-direction: row;
+  }
+  .right > div{
+    margin: 7px 20px 0 0;
+  }
+  .right > div > a{
+    color: #ffffff;
+    padding: 2px;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  div > .right > .btn_list {
+    padding: 10px 30px;  
+    color: #fff;
+    text-align: center;
+    border-radius: none;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #FF5A3C;
+    transition: 0.5s;
+    border: none;
+  }
+  .right > .btn_list:hover {
+    color: #fff;
+    background-color: #cb341c;
+  }
