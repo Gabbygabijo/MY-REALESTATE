@@ -1,0 +1,12 @@
+name: Real-estate Deployment
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: Push and deploy
+        run: sudo bash verify.sh
