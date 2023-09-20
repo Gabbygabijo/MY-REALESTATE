@@ -1,3 +1,7 @@
+body{
+    margin: auto;
+}
+
 #containeritemone {
 
     background-image: url(../imgs/imagetop.jpg);
