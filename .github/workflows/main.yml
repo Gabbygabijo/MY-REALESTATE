@@ -1,12 +1,19 @@
-name: Real-estate Deployment
-
+name: Deploy Master
 on:
   push:
     branches: [master]
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
+
     steps:
-      - name: Push and deploy
-        run: cd /home/actions-runner && sudo bash verify.sh
+      - uses: actions/checkout@v2
+      - name: Push to server and deploy
+        uses: appleboy/ssh-action@master
+        with:
+          HOST: ${{ secrets.SERVER_IP }}
+          USERNAME: ${{ secrets.SERVER_USERNAME }}
+          PORT: ${{ secrets.PORT }}
+          PASSWORD: ${{ secrets.SSH_KEY }}
+          script: cd ${{ secrets.SERVER_PATH }} && git pull origin master
