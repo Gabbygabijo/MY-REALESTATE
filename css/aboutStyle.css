@@ -1,3 +1,7 @@
+@import url('https://fonts.cdnfonts.com/css/nunito-sans');
+@import url('https://fonts.cdnfonts.com/css/smack-boom');
+
+
 html{
   scroll-behavior: smooth;
 }
@@ -326,6 +330,13 @@ body{
     .right > .top-area{
       padding: 1.3rem 0 0 1rem;
     }
+    .task-container{
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      height: fit-content;
+      margin: 40px auto;
+    }
 }
 @media (max-width:380px) {
     .opt{
@@ -479,3 +490,59 @@ body{
     color: #fff;
     background-color: #cb341c;
   }
+  .col{
+    color: #ff5a3c;
+    font-family: 'Smack Boom', sans-serif;
+  }
+
+  /* Task */
+  .task-container{
+    width: 70%;
+    height: fit-content;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .input-action > form{
+    margin-left: 30px;
+  }
+  .input-action > form > button{
+    color: #fff;
+    background-color: #FF5A3C;
+    border: none;
+    width: 5rem;
+    height: 1.9rem;
+    font-family: 'Nunito sans', sans-serif;
+    cursor: pointer;
+  }
+  .input-action > form > input{
+    border: none;
+    height: 1.9rem;
+    background-color: #ffe6e1;
+    outline: none;
+    padding-left: 8px;
+  }
+  .input-action > form > input::placeholder{
+    font-style: italic;
+  }
+  .task-list > h2{
+    font-family: 'Smack Boom', sans-serif;
+    text-transform: capitalize;
+    font-size: x-large;
+  }
+  .task-item{
+    background-color: #ffe6e1;
+    padding: 1px 15px;
+    margin: 6px 0;
+  }
+  .task-item > .dot{
+    background-color: #000;
+    height: 3px;
+    width: 3px;
+    float: right;
+    margin: 10px 2px 0 0;
+  }
+  .task-item > h3{
+    outline: none;
+  }
+  
