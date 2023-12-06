@@ -14,7 +14,9 @@ const taskInp = () =>{
 
 const btn = document.getElementById('btn-menu')
 const nav = document.getElementById('menu-nav')
+const btnAct = document.getElementById('btn-active')
 
 btn.addEventListener('click', ()=>{
     nav.classList.toggle('side-nav');
+    btnAct.classList.toggle('open')
 })
