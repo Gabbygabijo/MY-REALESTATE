@@ -11,3 +11,10 @@ const taskInp = () =>{
     document.getElementById('text-input').value = '';
     console.log(input);
 }
+
+const btn = document.getElementById('btn-menu')
+const nav = document.getElementById('menu-nav')
+
+btn.addEventListener('click', ()=>{
+    nav.classList.toggle('side-nav');
+})

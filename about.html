@@ -50,7 +50,7 @@
                                           </svg>
                                     </a>
                                 </div>
-                                <button class="btn_list">Add Listing</button>
+                                <a class="btn_list" href="#task-app">View Task App</a>
                             </div>
                         </div>
                         
@@ -90,8 +90,26 @@
                                         </svg>
                                     </a>
                                 </li>
+                                <li>
+                                    <button id="btn-menu">
+                                        &#9776;
+                                        <!-- <span class="ham-top"></span>
+                                        <span class="ham-mid"></span>
+                                        <span class="ham-buttom"></span> -->
+                                    </button>
+                                </li>
                             </ul>
                         </div>
+                    </div>
+                    <div class="hidden" id="menu-nav">
+                        <ul>
+                            <li><a href="./index.html">HOME</a></li>
+                            <li><a href="./about.html">ABOUT</a></li>
+                            <li><a href="./propertypage.html">PROPERTY</a></li>
+                            <li><a href="./news.html">NEWS</a></li>
+                            <li> <a href="./pages.html">PAGES</a></li>
+                            <li><a href="./contact.html">CONTACT</a></li>
+                        </ul>
                     </div>
                 </nav>
                 <div id="noy" class="heading">
@@ -168,7 +186,7 @@
                     <h1>This is the main section </h1>
                     <p>Comming soon...</p>
                 </div>
-                <div class="task">
+                <div class="task" id="task-app">
                     <div class="task-container">
                         <div class="input-action">
                             <h2>Input task</h2>
@@ -178,7 +196,7 @@
                             </form>
                         </div>
                         <div class="task-list" id="task-list">
-                            <h2>Your <span class="col">task</span> list</h2>
+                            <h2 contenteditable>Your <span class="col">task</span> list</h2>
                             <!-- <div class="task-item">
                                 <div class="dot"></div>
                                 <h3 class="col">Dommy task</h1>
