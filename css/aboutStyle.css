@@ -443,8 +443,8 @@ body{
   }
   .opt > ul li button{
     display: none;
-    padding: 10px 15px;
-    margin: 0 4px;
+    height: 47px;
+    width: 40px;
     color: #000;
     background-color: #fff;
     text-align: center;
@@ -462,11 +462,6 @@ body{
   }
 
   /* Nav button */
-  .ham{
-    color: #000;
-    height: 20px;
-    width: 24px;
-  }
   .hidden{
     display: none;
   }
@@ -487,6 +482,42 @@ body{
   .side-nav > ul li a:hover{
     border-bottom: 2px solid #76797c;
   }
+
+  .hamburger{
+    position: relative;
+    border: none;
+    margin-bottom: 16px;
+    transition: all 0.3s;
+}
+
+.ham-top, .ham-mid, .ham-buttom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 1px;
+    background-color: #000;
+    transition: all 0.5s;
+}
+.ham-mid{
+    transform: translateY(7px);
+}
+.ham-buttom{
+    transform: translateY(14px);
+}
+
+.open{
+    transform: rotate(90deg) translateY(-8px) translateX(8px);
+}
+.open .ham-top{
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.open .ham-mid{
+    display: none;
+}
+.open .ham-buttom{
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
 
   /* end of nav button */
   .top-nav{
