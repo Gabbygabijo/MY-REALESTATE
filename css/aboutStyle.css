@@ -297,12 +297,15 @@ body{
       width: 19%;
       margin: 10px 0px 10px 5px;
     }
+    .opt > ul li button{
+      display: block !important;
+    }
 }
 
 @media (max-width:700px) {
     .fluid-container{
-        display: flex;
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
     }
     #cta{
         display: flex;
@@ -312,8 +315,8 @@ body{
         font-size: 1.5rem;
     }
     .col-2, .col-6{
-        width: 50%;
-        padding: 0 50px;
+        width: 80%;
+        padding: 0 10px;
     }
     .top-nav{
         display: none;
@@ -339,12 +342,16 @@ body{
     }
 }
 @media (max-width:380px) {
-    .opt{
+    .opt > ul li a{
         display: none;
       }
     .heading{
       padding: 4rem 2rem !important;
     }
+    .col-2, .col-6{
+      width: auto;
+      padding: 0 10px;
+  }
 }
 
 /* Heading style */
@@ -434,7 +441,54 @@ body{
     color: #fff;
     background-color: #FF5A3C;
   }
+  .opt > ul li button{
+    display: none;
+    padding: 10px 15px;
+    margin: 0 4px;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    border-radius: none;
+    font-size: 20px;
+    transition: 0.3s;
+    border: none;
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+  .opt > ul li button:hover{
+    color: #fff;
+    background-color: #FF5A3C;
+  }
 
+  /* Nav button */
+  .ham{
+    color: #000;
+    height: 20px;
+    width: 24px;
+  }
+  .hidden{
+    display: none;
+  }
+  .side-nav{
+    position: absolute;
+    display: grid;
+    left: 60%;
+  }
+  .side-nav > ul li{
+    list-style-type: none;
+    margin: 10px 0;
+  }
+  .side-nav > ul li a{
+    text-decoration: none;
+    color: #171b2a;
+    border-bottom: 1px solid #FF5A3C;
+  }
+  .side-nav > ul li a:hover{
+    border-bottom: 2px solid #76797c;
+  }
+
+  /* end of nav button */
   .top-nav{
     background-color: #0b2c3d;
   }
@@ -485,6 +539,7 @@ body{
     background-color: #FF5A3C;
     transition: 0.5s;
     border: none;
+    text-decoration: none;
   }
   .right > .btn_list:hover {
     color: #fff;
