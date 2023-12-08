@@ -492,8 +492,6 @@ body{
 
 .ham-top, .ham-mid, .ham-buttom{
     position: absolute;
-    /* top: 50% !important;
-    left: 50% !important; */
     width: 24px;
     height: 1px;
     background-color: #000;
