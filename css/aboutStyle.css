@@ -341,7 +341,7 @@ body{
       margin: 40px auto;
     }
 }
-@media (max-width:380px) {
+@media (max-width:428px) {
     .opt > ul li a{
         display: none;
       }
@@ -444,7 +444,7 @@ body{
   .opt > ul li button{
     display: none;
     height: 47px;
-    width: 40px;
+    width: 47px;
     color: #000;
     background-color: #fff;
     text-align: center;
@@ -507,7 +507,10 @@ body{
 }
 
 .open{
-    transform: rotate(90deg) translateY(-8px) translateX(8px);
+    transform: rotate(90deg) 
+    translateY(-8px) 
+    translateX(8px)
+    ;
 }
 .open .ham-top{
     transform: rotate(45deg) translateY(6px) translate(6px);
