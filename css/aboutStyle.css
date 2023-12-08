@@ -444,7 +444,7 @@ body{
   .opt > ul li button{
     display: none;
     height: 47px;
-    width: 47px;
+    width: 40px;
     color: #000;
     background-color: #fff;
     text-align: center;
@@ -492,12 +492,13 @@ body{
 
 .ham-top, .ham-mid, .ham-buttom{
     position: absolute;
-    top: 0;
-    left: 0;
+    /* top: 50% !important;
+    left: 50% !important; */
     width: 24px;
     height: 1px;
     background-color: #000;
     transition: all 0.5s;
+    margin-left: -12px;
 }
 .ham-mid{
     transform: translateY(7px);
