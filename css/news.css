@@ -423,7 +423,7 @@ div > .right > .btn_list {
   }
 }
 @media (max-width: 410px) {
-  .opt {
+  .opt > ul li a{
     display: none;
   }
   .card img {
