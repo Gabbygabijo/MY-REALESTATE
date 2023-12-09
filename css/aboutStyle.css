@@ -300,6 +300,11 @@ body{
     .opt > ul li button{
       display: block !important;
     }
+    .side-nav{
+      position: absolute;
+      display: grid !important;
+      left: 60%;
+    }
 }
 
 @media (max-width:700px) {
@@ -467,7 +472,7 @@ body{
   }
   .side-nav{
     position: absolute;
-    display: grid;
+    display: none;
     left: 60%;
   }
   .side-nav > ul li{
